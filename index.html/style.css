@@ -1,0 +1,357 @@
+/* --- RESET E ESTILOS GERAIS --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 60px 0;
+}
+
+.bg-light {
+  background-color: #f8f9fa;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #111;
+}
+
+/* --- HEADER & NAV --- */
+.header {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #2563eb;
+}
+
+/* --- HERO SECTION --- */
+.hero {
+  padding: 100px 0;
+  text-align: center;
+  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero h1 span {
+  color: #2563eb;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* --- BOTÕES --- */
+.btn {
+  display: inline-block;
+  padding: 10px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.btn-primary {
+  background-color: #2563eb;
+  color: #fff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #1d4ed8;
+}
+
+.btn-secondary {
+  background-color: #e5e7eb;
+  color: #374151;
+}
+
+.btn-secondary:hover {
+  background-color: #d1d5db;
+}
+
+.btn-block {
+  width: 100%;
+  cursor: pointer;
+}
+
+/* --- SOBRE MIM --- */
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.about-avatar {
+  flex: 1;
+  min-width: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.avatar-placeholder {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-color: #cbd5e1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #475569;
+  font-weight: bold;
+}
+
+.about-text {
+  flex: 2;
+  min-width: 280px;
+}
+
+.about-text p {
+  margin-bottom: 15px;
+}
+
+/* --- PROJETOS --- */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.card-image-placeholder {
+  height: 160px;
+  background-color: #cbd5e1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #475569;
+  font-weight: 500;
+}
+
+.card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-body h3 {
+  margin-bottom: 10px;
+}
+
+.card-body p {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 15px;
+  flex-grow: 1;
+}
+
+.tags {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background-color: #e0e7ff;
+  color: #3730a3;
+  font-size: 0.75rem;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.card-links {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-link {
+  text-decoration: none;
+  color: #2563eb;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.btn-link:hover {
+  text-decoration: underline;
+}
+
+/* --- HABILIDADES --- */
+.skills-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.skill-item {
+  background-color: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  color: #334155;
+}
+
+/* --- CONTATO --- */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+/* --- RODAPÉ --- */
+.footer {
+  background-color: #0f172a;
+  color: #94a3b8;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+}
+
+/* --- RESPONSIVIDADE (MOBILE) --- */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}/* Estilo personalizado para o botão do LinkedIn */
+.btn-linkedin {
+  background-color: #0a66c2; /* Azul oficial do LinkedIn */
+  color: #ffffff;
+}
+
+.btn-linkedin:hover {
+  background-color: #084e96; /* Azul um pouco mais escuro ao passar o mouse */
+}/* Adicione isso ao final do seu style.css para garantir a foto perfeita */
+.avatar-img {
+  width: 180px;  /* Ajuste o tamanho se necessário */
+  height: 180px; /* Deve ser igual à largura para um círculo perfeito */
+  border-radius: 50%; /* Faz a foto ficar redonda */
+  object-fit: cover; /* Garante que a foto não fique esticada, cortando o excesso */
+  border: 4px solid #fff; /* Adiciona uma borda branca opcional */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adiciona uma sombra suave opcional */
+}/* Classe reutilizável para centralizar conteúdo */
+.container {
+  max-width: 1100px; /* Define a largura máxima do conteúdo */
+  margin: 0 auto;    /* Centraliza o contêiner na tela (cima/baixo: 0, esquerda/direita: automático) */
+  padding: 0 20px;   /* Adiciona um pequeno espaçamento interno nas laterais para telas pequenas (mobile) */
+  box-sizing: border-box; /* Garante que o padding não aumente a largura total */
+}/* Estilo específico para a seção Sobre Mim */
+#sobre {
+  display: flex;
+  flex-direction: column; /* Organiza os elementos em coluna (título, foto, texto) */
+  align-items: center;    /* Centraliza os elementos horizontalmente */
+  max-width: 1100px;      /* Define a largura máxima */
+  margin: 0 auto;         /* Centraliza a própria seção na tela */
+  padding: 60px 20px;     /* Adiciona padding nas laterais (e em cima/baixo) */
+  box-sizing: border-box; /* Garante que o padding não aumente a largura total */
+}
+
+/* Garante que os parágrafos de texto também sejam centralizados se necessário, mas que não ocupem toda a largura */
+#sobre .about-text {
+  max-width: 800px; /* Opcional: limite ainda mais a largura do texto para leitura confortável */
+  text-align: justify; /* Opcional: justifica o texto, se preferir */
+}

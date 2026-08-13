@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio | Estiverson Da Silva Barbosa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Cabeçalho / Navegação -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="#" class="logo">Estiverson Da Silva Barbosa</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-content">
+      <h1>Olá, eu sou <span>Estiverson Da Silva Barbosa</span> </h1>
+      <p>Estudante de Análise e Desenvolvimento de Sistemas em Formação</p>
+      <div class="hero-buttons">
+      <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
+  <a href="https://github.com/seudev" target="_blank" class="btn btn-secondary">GitHub</a>
+  <!-- Novo link do LinkedIn adicionado abaixo -->
+  <a href="https://linkedin.com/in/seu-perfil" target="_blank" class="btn btn-linkedin">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre Mim -->
+  <section id="sobre" class="section">
+    <<div class="about-content">
+  <div class="about-avatar">
+    <!-- Novo código para a imagem adicionado abaixo -->
+    <img src="minha-foto.jpg" alt="Foto de [Seu Nome]" class="avatar-img">
+  </div>
+  <div class="about-text">
+    ...
+  </div>
+</div>
+        <div class="about-text">
+          <p>
+            Atualmente estou cursando Análise e Desenvolvimento de Sistemas e me apaixonando por desenvolvimento web. 
+            Tenho focado meus estudos na criação de interfaces modernas, responsivas e funcionais.
+          </p>
+          <p>
+            Busco oportunidades para aplicar meus conhecimentos em projetos reais e evoluir constantemente minhas habilidades técnicas.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projetos -->
+  <section id="projetos" class="section bg-light">
+    <div class="container">
+      <h2 class="section-title">Meus Projetos</h2>
+      
+      <div class="projects-grid">
+        <!-- Card 1 -->
+        <article class="project-card">
+          <div class="card-image-placeholder">Print do Projeto 1</div>
+          <div class="card-body">
+            <h3>Projeto Acadêmico 1</h3>
+            <p>Descrição curta sobre o que este projeto faz e qual problema ele resolve.</p>
+            <div class="tags">
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <div class="card-links">
+              <a href="#" class="btn-link">Ver Demo</a>
+              <a href="#" class="btn-link">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="project-card">
+          <div class="card-image-placeholder">Print do Projeto 2</div>
+          <div class="card-body">
+            <h3>Projeto Acadêmico 2</h3>
+            <p>Descrição curta sobre a aplicação desenvolvida na aula de programação.</p>
+            <div class="tags">
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS Flexbox</span>
+            </div>
+            <div class="card-links">
+              <a href="#" class="btn-link">Ver Demo</a>
+              <a href="#" class="btn-link">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="project-card">
+          <div class="card-image-placeholder">Print do Projeto 3</div>
+          <div class="card-body">
+            <h3>Projeto Pessoal</h3>
+            <p>Uma ideia ou exercício prático que você desenvolveu por fora das aulas.</p>
+            <div class="tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">API</span>
+            </div>
+            <div class="card-links">
+              <a href="#" class="btn-link">Ver Demo</a>
+              <a href="#" class="btn-link">GitHub</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Habilidades -->
+  <section id="habilidades" class="section">
+    <div class="container">
+      <h2 class="section-title">Habilidades & Tecnologias</h2>
+      <div class="skills-grid">
+        <div class="skill-item">HTML5</div>
+        <div class="skill-item">CSS3</div>
+        <div class="skill-item">JavaScript</div>
+        <div class="skill-item">Git & GitHub</div>
+        <div class="skill-item">Responsividade</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="section bg-light">
+    <div class="container">
+      <h2 class="section-title">Entre em Contato</h2>
+      <form class="contact-form" action="#" method="POST">
+        <div class="form-group">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="5" placeholder="Sua mensagem..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Enviar Mensagem</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Estiverson da Silva Barbosa - Portfólio </p>
+    </div>
+  </footer>
+
+</body>
+</html>
