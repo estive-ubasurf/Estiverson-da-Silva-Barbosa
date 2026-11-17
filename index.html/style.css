@@ -306,17 +306,25 @@ html {
 @media (max-width: 768px) {
   .nav-container {
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .nav-links {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 0;
   }
 
   .hero h1 {
-    font-size: 1.8rem;
+    font-size: 2.1rem;
   }
 
   .about-content {
     flex-direction: column;
     text-align: center;
-  }
+}
 }/* Estilo personalizado para o botão do LinkedIn */
 .btn-linkedin {
   background-color: #0a66c2; /* Azul oficial do LinkedIn */
